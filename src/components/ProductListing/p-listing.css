@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .product__listing {
+    @apply mx-auto py-16 sm:py-24;
+  }
+
+  .product__listing .wrapper {
+    @apply w-full flex flex-col items-center justify-center md:flex-row md:flex-wrap;
+  }
+
+  .product__listing .product__card {
+    @apply group shadow-lg bg-gray-100 px-8 lg:p-4 rounded-md m-4 w-80;
+  }
+
+  .product__listing .product__card .image {
+    @apply flex flex-col items-center;
+  }
+
+  .product__listing .product__card .image img {
+    @apply h-64 object-center rounded-lg object-contain group-hover:opacity-75;
+  }
+
+  .product__listing .product__card .heading {
+    @apply mt-4 ml-2 text-xl font-semibold text-gray-900;
+  }
+
+  .product__listing .product__card .info {
+    @apply mt-1 mb-4 ml-2 flex justify-between;
+  }
+
+  .product__listing .product__card .info .price {
+    @apply flex items-center;
+  }
+
+  .product__listing .product__card .info .price .discount {
+    @apply text-lg font-medium text-gray-900 mr-1;
+  }
+
+  .product__listing .product__card .info .price .mrp {
+    @apply text-base text-gray-600 line-through;
+  }
+
+  .product__listing .product__card .info .rating {
+    @apply flex ml-1 items-center;
+  }
+
+  .product__listing .product__card .info .rating i {
+    @apply text-yellow-500 mr-1;
+  }
+
+  .product__listing .product__card .info .rating p {
+    @apply mr-1;
+  }
+}
+
+@tailwind utilities;
