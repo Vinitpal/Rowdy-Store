@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .image__container {
+    @apply lg:w-1/2 lg:px-8 mx-auto flex lg:flex-col flex-wrap;
+  }
+
+  .image__container img {
+    @apply w-full my-2 py-2 lg:h-96 h-64 object-contain object-center rounded bg-white shadow-md;
+  }
+
+  .image__container .demo__img {
+    @apply w-full flex justify-evenly my-4;
+  }
+
+  .image__container .demo__img img {
+    @apply lg:w-1/2 cursor-pointer mr-2 lg:h-28 h-16 object-contain object-center rounded bg-gray-50;
+  }
+}
+
+@tailwind utilities;
