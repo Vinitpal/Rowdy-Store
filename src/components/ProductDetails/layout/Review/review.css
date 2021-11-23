@@ -6,15 +6,15 @@
     @apply bg-gray-100 px-4 py-8 w-full lg:px-6;
   }
 
-  .review__section .container {
+  .review__section .wrapper {
     @apply bg-white w-full lg:flex lg:justify-around lg:items-center border shadow-sm rounded-md px-4 py-8 pb-16;
   }
 
-  .review__section .container .review-stats .heading {
+  .review__section .wrapper .review-stats .heading {
     @apply text-2xl font-bold text-gray-900;
   }
 
-  .review__section .container .review-stats .overview__rating {
+  .review__section .wrapper .review-stats .overview__rating {
     @apply w-full flex items-center justify-between lg:justify-start my-2;
   }
 
@@ -26,72 +26,67 @@
     @apply w-1/4 flex items-center justify-between;
   }
 
-  .review__section .container .review-stats .overview__rating span {
+  .review__section .wrapper .review-stats .overview__rating span {
     @apply w-2/4 text-gray-600 ml-2 text-xs font-semibold;
   }
 
-  .review__section .container .review-stats .review__cta {
+  .review__section .wrapper .review-stats .review__cta {
     @apply mt-6 flex flex-col;
   }
 
-  .review__section .container .review-stats .review__cta h1 {
+  .review__section .wrapper .review-stats .review__cta h1 {
     @apply text-lg font-semibold text-gray-900;
   }
 
-  .review__section .container .review-stats .review__cta p {
+  .review__section .wrapper .review-stats .review__cta p {
     @apply text-sm text-gray-500 leading-5;
   }
 
-  .review__section .container .review-stats .review__cta button {
+  .review__section .wrapper .review-stats .review__cta button {
     @apply my-4 py-2 border-2 text-center font-semibold rounded shadow hover:bg-gray-100;
   }
 
-  .review__section .container .user-reviews__container {
+  .user-reviews__container {
     @apply lg:w-5/12 lg:h-96 overflow-y-auto;
   }
 
-  .review__section .container .user-reviews__container .user__info {
+  .user-reviews__container .user__info {
     @apply flex items-center my-2;
   }
 
-  .review__section .container .user-reviews__container .user__info img {
+  .user-reviews__container .user__info img {
     @apply w-14 h-14;
   }
 
-  .review__section .container .user-reviews__container .user__info h1 {
+  .user-reviews__container .user__info h1 {
     @apply font-semibold;
   }
 
-  .review__section
-    .container
-    .user-reviews__container
-    .user__info
-    .users__rating
-    i {
+  .review__section .user-reviews__container .user__info .users__rating i {
     @apply text-yellow-500 mr-1;
   }
 
-  .review__section .container .user-reviews__container .review__text i {
-    @apply leading-6 text-gray-700 italic pb-6 border-b-2;
+  .user-reviews__container .review__text {
+    @apply leading-6 text-gray-700 italic pb-6 border-b-2 px-3;
   }
 
-  .review__section .container .rating-bar__container {
+  .review__section .rating-bar__container {
     @apply flex items-center justify-between px-1 py-1;
   }
 
-  .review__section .container .rating-bar__container .rating-number {
+  .review__section .rating-bar__container .rating-number {
     @apply flex justify-between lg:justify-around items-center;
   }
 
-  .review__section .container .rating-bar__container .rating-number i {
+  .review__section .rating-bar__container .rating-number i {
     @apply text-yellow-500;
   }
 
-  .review__section .container .rating-bar__container .rating-bar {
+  .review__section .rating-bar__container .rating__bar {
     @apply h-4 w-full bg-gray-200 rounded-md;
   }
 
-  .review__section .container .rating-bar__container .rating-bar div {
+  .review__section .rating-bar__container .rating__bar div {
     @apply h-full rounded-md bg-yellow-500;
   }
 }

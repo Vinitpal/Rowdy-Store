@@ -6,8 +6,8 @@ import ReviewBarContainer from "./ReviewBarContainer";
 const Reviews = () => {
   return (
     <div className="review__section">
-      <div className="container">
-        <div className="review-stats">
+      <div className="wrapper">
+        <div className="review-stats lg:w-5/12">
           <div className="my-4">
             <h1 className="heading">Customer Reviews</h1>
 

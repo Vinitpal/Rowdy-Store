@@ -5,6 +5,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ProductListing from "./components/ProductListing";
 import ProductDetail from "./components/ProductDetails";
+import Cart from "./components/Cart";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "./actions/index";
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <div className="App">
+      <Cart />
+
       {/* Routes */}
       <Routes>
         <Route exact path="product/:id" element={<ProductDetail />} />

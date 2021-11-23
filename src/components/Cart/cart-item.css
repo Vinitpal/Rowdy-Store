@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .cart-item {
+    @apply py-6 flex;
+  }
+
+  .cart-item .product__img {
+    @apply flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden;
+  }
+
+  .cart-item .product__img img {
+    @apply w-full h-full object-center object-contain;
+  }
+
+  .cart-item .product__info {
+    @apply ml-4 flex-1 flex flex-col;
+  }
+
+  .cart-item .product__info .heading {
+    @apply flex justify-between text-base font-medium text-gray-900;
+  }
+
+  .cart-item .product__info .content {
+    @apply flex-1 flex items-end justify-between text-sm;
+  }
+
+  .cart-item .product__info .content .update-count__btn {
+    @apply items-center w-7 mx-2 border border-transparent rounded-xl text-lg font-medium text-black text-center hover:bg-gray-300;
+  }
+
+  .cart-item .product__info .delete-item__btn {
+    @apply font-medium text-indigo-600 hover:text-indigo-500;
+  }
+}
+
+@tailwind utilities;
