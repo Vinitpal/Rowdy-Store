@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply text-gray-600 sticky top-0 z-10 shadow-sm;
+  }
+
+  .navbar .wrapper {
+    @apply mx-auto bg-black text-white flex flex-wrap p-5 pb-0 justify-between sm:flex-row md:flex-row items-center;
+  }
+
+  .navbar .wrapper .logo {
+    @apply flex font-medium items-center text-gray-900 cursor-pointer;
+  }
+
+  .navbar .wrapper .logo img {
+    @apply rounded-full w-10;
+  }
+
+  .navbar .wrapper .logo span {
+    @apply ml-3 text-xl text-white hover:text-indigo-200;
+  }
+
+  .navbar .wrapper .pc-nav {
+    @apply hidden lg:flex md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 items-center text-base justify-center;
+  }
+
+  .navbar .wrapper .btn-container {
+    @apply flex items-center;
+  }
+
+  .navbar .wrapper .btn-container .cart-btn {
+    @apply inline-flex items-center border-0 py-2 px-3 focus:outline-none lg:bg-gray-700 hover:bg-purple-500 rounded text-base;
+  }
+
+  .navbar .wrapper .btn-container .hamburger {
+    @apply lg:hidden inline-flex items-center border-0 ml-2 py-3 px-4 focus:outline-none hover:bg-purple-500 rounded text-base;
+  }
+
+  .navbar .wrapper .mobile-nav {
+    @apply transition-all ease-out duration-500 lg:hidden w-2/3 mx-auto mt-2;
+  }
+
+  .navbar .wrapper .mobile-nav .mobile-nav__container {
+    @apply flex flex-col items-center transition-all ease-out duration-500  w-full space-y-2 text-center text-base;
+  }
+
+  .sub-navbar {
+    @apply hidden lg:block md:hidden;
+  }
+
+  .sub-navbar .wrapper {
+    @apply flex justify-center bg-gray-900 text-white;
+  }
+
+  .sub-navbar .wrapper ul {
+    @apply flex flex-wrap justify-center sm:font-normal;
+  }
+
+  .sub-nav__elements {
+    @apply border-r-2 hover:text-purple-600 cursor-pointer px-10 my-2;
+  }
+}

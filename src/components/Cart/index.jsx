@@ -79,7 +79,8 @@ const index = () => {
                           {products.length ? (
                             !cart.length ? (
                               <div className="w-full text-left flex flex-col items-center">
-                                <CartisEmpty />
+                                {/* <CartisEmpty /> */}
+                                <div>empty</div>
                               </div>
                             ) : (
                               cart.map((cartItem) => {

@@ -3,9 +3,10 @@ import "./App.css";
 
 // Routes
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Cart from "./components/Cart";
 import ProductListing from "./components/ProductListing";
 import ProductDetail from "./components/ProductDetails";
-import Cart from "./components/Cart";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "./actions/index";
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <Cart />
 
       {/* Routes */}
