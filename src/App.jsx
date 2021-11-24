@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import ProductListing from "./components/ProductListing";
 import ProductDetail from "./components/ProductDetails";
+import Footer from "./components/Footer";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "./actions/index";
@@ -35,6 +36,8 @@ function App() {
         <Route exact path="product/:id" element={<ProductDetail />} />
         <Route exact path="/" element={<ProductListing />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const DisclosureContainer = ({ title, desc }) => {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="btn">
+            <Disclosure.Button className="btn focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
               <h1 className="">{title}</h1>
               <ChevronUpIcon
                 className={`${

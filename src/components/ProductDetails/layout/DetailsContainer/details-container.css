@@ -85,7 +85,7 @@
   }
 
   .details__container .disclosure__container .btn {
-    @apply flex justify-between items-center w-full px-4 text-sm font-medium text-left rounded-lg focus:outline-none focus-within:ring focus-within:ring-purple-500 focus-within:ring-opacity-75;
+    @apply flex justify-between items-center w-full px-4 text-sm font-medium text-left rounded-lg focus:outline-none;
   }
 
   .details__container .disclosure__container .btn h1 {
