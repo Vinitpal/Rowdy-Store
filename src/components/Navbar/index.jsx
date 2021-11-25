@@ -22,7 +22,7 @@ export const SubNavbar = () => {
   ];
   return (
     <div className="sub-navbar">
-      <div className="wrapper">
+      <div className="sub-navbar__wrapper">
         <ul className="list-style-none">
           {elems.map((elem, i) => (
             <SubNavElems key={i} text={elem} />

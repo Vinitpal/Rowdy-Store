@@ -1,9 +1,12 @@
 import { useSelector } from "react-redux";
-import BillDetails from "./BillDetails";
-import BillDetailsPlaceholder from "./BillDetailsPlaceholder";
-import EmptyCart from "./EmptyCart";
+import "./checkout.css";
+
+// components
 import CheckoutItem from "./Checkout-Item";
 import CheckoutItemPlaceholder from "./Checkout-Item/CheckoutItemPlaceholder";
+import BillDetails from "./Bill-details";
+import BillDetailsPlaceholder from "./Bill-details/BillDetailsPlaceholder";
+import CartisEmpty from "./CartisEmpty";
 
 const index = () => {
   const products = useSelector((state) => state.products);
@@ -12,14 +15,13 @@ const index = () => {
   if (!cart.length) {
     return (
       <div className="checkout__empty-cart">
-        <EmptyCart />
+        <CartisEmpty />
       </div>
     );
   }
 
   return (
     <div className="checkout__section">
-      {/* Cart Items Container */}
       <div className="items__container">
         {products.length
           ? cart.map((item) => (
@@ -29,7 +31,7 @@ const index = () => {
               <CheckoutItemPlaceholder key={ind} />
             ))}
       </div>
-      {/* Order Details */}
+
       {products.length ? (
         <BillDetails cart={cart} />
       ) : (

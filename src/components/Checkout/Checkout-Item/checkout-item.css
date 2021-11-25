@@ -9,7 +9,7 @@
   }
 
   .checkout-items__section img {
-    @apply w-40 md:w-52 md:h-52 p-4 h-full rounded-md border;
+    @apply w-40 md:w-48 md:h-48 p-4 h-full rounded-md border;
   }
 
   .checkout-items__section .wrapper {
@@ -44,7 +44,7 @@
     @apply flex;
   }
 
-  .checkout-items__section .wrapper .svg {
+  .checkout-items__section .wrapper .in-stock svg {
     @apply w-6 h-6;
   }
 

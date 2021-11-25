@@ -9,7 +9,7 @@ import {
   resetTotal,
   clearCart,
   getNotification,
-} from "../../actions/index";
+} from "../../../actions/index";
 import { Link } from "react-router-dom";
 
 const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
@@ -78,7 +78,7 @@ const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
                       Place Your Order
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="text-gray-500">
+                      <p className="text-lg text-gray-500">
                         Please confirm your address details.
                       </p>
                       <p className="text-sm text-black">{address}</p>

@@ -15,7 +15,7 @@
   .bill-details-section .sub-total,
   .bill-details-section .shipping,
   .bill-details-section .tax {
-    @apply w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200;
+    @apply w-full flex justify-between font-medium text-gray-500 py-2 border-b-2 border-gray-200;
   }
 
   .bill-details-section .sub-total span,
@@ -107,33 +107,24 @@
     @apply mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full;
   }
 
-  .confirm-modal-section
-    .wrapper
-    main
-    .content
-    .content-container
-    .btn__container {
+  .confirm-modal-section .wrapper main .content .content-container .text h3 {
+    @apply text-lg leading-6 font-medium text-gray-900 border-b-2 border-gray-400 pb-2;
+  }
+
+  .confirm-modal-section .wrapper main .btn__container {
     @apply bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse;
   }
 
-  .confirm-modal-section
-    .wrapper
-    main
-    .content
-    .content-container
-    .btn__container
-    .btn {
+  .confirm-modal-section .wrapper main .btn__container .btn {
     @apply w-full inline-flex justify-center rounded-md border sm:ml-3 sm:w-auto sm:text-sm shadow-sm text-base font-medium px-4 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
 
-  .confirm-modal-section
-    .wrapper
-    main
-    .content
-    .content-container
-    .btn__container
-    .confirm-btn {
+  .confirm-modal-section .wrapper main .btn__container .confirm-btn {
     @apply border-gray-300  bg-white  text-gray-700 hover:bg-gray-50  focus:ring-indigo-500;
+  }
+
+  .confirm-modal-section .wrapper main .btn__container .cancel-btn {
+    @apply bg-blue-600 text-white hover:bg-blue-700  focus:ring-blue-500;
   }
 }
 

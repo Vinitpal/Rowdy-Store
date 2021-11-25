@@ -31,7 +31,8 @@
   }
 
   .checkout__section .items__container {
-    @apply w-full lg:overflow-y-auto md:overflow-y-auto px-2 my-2 cart-container;
+    @apply w-full lg:overflow-y-auto md:overflow-y-auto px-2 my-2;
+    height: 80vh;
   }
 }
 

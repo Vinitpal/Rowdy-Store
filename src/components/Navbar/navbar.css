@@ -52,12 +52,12 @@
     @apply hidden lg:block md:hidden;
   }
 
-  .sub-navbar .wrapper {
+  .sub-navbar .sub-navbar__wrapper {
     @apply flex justify-center bg-gray-900 text-white;
   }
 
-  .sub-navbar .wrapper ul {
-    @apply flex flex-wrap justify-center sm:font-normal;
+  .sub-navbar .sub-navbar__wrapper ul {
+    @apply flex flex-wrap justify-center sm:font-normal py-2;
   }
 
   .sub-nav__elements {
