@@ -1,4 +1,4 @@
-import React from "react";
+import "./checkout-item.css";
 import { XIcon } from "@heroicons/react/outline";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";

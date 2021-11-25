@@ -33,52 +33,6 @@
   .checkout__section .items__container {
     @apply w-full lg:overflow-y-auto md:overflow-y-auto px-2 my-2 cart-container;
   }
-
-  /******* Checkout-Items section *******/
-
-  .checkout-items__section {
-    @apply p-5 lg:h-2/5 flex items-center flex-col lg:flex-row lg:items-start border mb-2;
-  }
-
-  .checkout-items__section img {
-    @apply w-40 md:w-52 md:h-52 p-4 h-full rounded-md border;
-  }
-
-  .checkout-items__section .wrapper {
-    @apply w-full h-full flex flex-col p-4 justify-between;
-  }
-
-  .checkout-items__section .wrapper .info {
-    @apply w-full flex justify-between;
-  }
-
-  .checkout-items__section .wrapper .info .title {
-    @apply font-medium text-gray-600;
-  }
-
-  .checkout-items__section .wrapper .info .price {
-    @apply font-medium;
-  }
-
-  .checkout-items__section .wrapper .info .quantity {
-    @apply font-medium text-gray-900;
-  }
-
-  .checkout-items__section .wrapper .info .quantity span {
-    @apply font-semibold text-gray-700;
-  }
-
-  .checkout-items__section .wrapper .info .remove__item button {
-    @apply p-0 text-gray-400;
-  }
-
-  .checkout-items__section .wrapper .in-stock {
-    @apply flex;
-  }
-
-  .checkout-items__section .wrapper .svg {
-    @apply w-6 h-6;
-  }
 }
 
 @tailwind utilities;

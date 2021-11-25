@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  /******* Checkout-Items section *******/
+
+  .checkout-items__section {
+    @apply p-5 lg:h-2/5 flex items-center flex-col lg:flex-row lg:items-start border mb-2;
+  }
+
+  .checkout-items__section img {
+    @apply w-40 md:w-52 md:h-52 p-4 h-full rounded-md border;
+  }
+
+  .checkout-items__section .wrapper {
+    @apply w-full h-full flex flex-col p-4 justify-between;
+  }
+
+  .checkout-items__section .wrapper .info {
+    @apply w-full flex justify-between;
+  }
+
+  .checkout-items__section .wrapper .info .title {
+    @apply font-medium text-gray-600;
+  }
+
+  .checkout-items__section .wrapper .info .price {
+    @apply font-medium;
+  }
+
+  .checkout-items__section .wrapper .info .quantity {
+    @apply font-medium text-gray-900;
+  }
+
+  .checkout-items__section .wrapper .info .quantity span {
+    @apply font-semibold text-gray-700;
+  }
+
+  .checkout-items__section .wrapper .info .remove__item button {
+    @apply p-0 text-gray-400;
+  }
+
+  .checkout-items__section .wrapper .in-stock {
+    @apply flex;
+  }
+
+  .checkout-items__section .wrapper .svg {
+    @apply w-6 h-6;
+  }
+
+  /******* Checkout placeholder *******/
+  .checkout-item__placeholder {
+    @apply border border-blue-300 shadow rounded-md p-4 w-full mx-auto;
+  }
+
+  .checkout-item__placeholder .wrapper {
+    @apply animate-pulse flex flex-col lg:flex-row lg:items-start items-center space-x-4;
+  }
+
+  .checkout-item__placeholder .wrapper {
+    @apply rounded-md bg-blue-400 h-40 w-40;
+  }
+
+  .checkout-item__placeholder .wrapper .info {
+    @apply flex-1 space-y-4 mt-4 py-1 w-full space-y-2;
+  }
+
+  .checkout-item__placeholder .wrapper .info .info__wrapper {
+    @apply h-4 rounded flex justify-between w-full;
+  }
+
+  .checkout-item__placeholder .wrapper .info .text {
+    @apply h-4 bg-blue-400 rounded w-1/4;
+  }
+
+  .checkout-item__placeholder .wrapper .info .btn {
+    @apply h-4 bg-blue-400 mr-8 rounded w-4;
+  }
+}
+
+@tailwind utilities;

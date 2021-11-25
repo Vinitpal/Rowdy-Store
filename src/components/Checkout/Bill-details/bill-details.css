@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  /******* Bill details section *******/
+
+  .bill-details-section {
+    @apply container h-full rounded-lg bg-gray-200 p-4 mx-4 my-2 lg:max-w-lg;
+  }
+
+  .bill-details-section .heading {
+    @apply text-lg font-bold text-gray-900 pb-5;
+  }
+
+  .bill-details-section .sub-total,
+  .bill-details-section .shipping,
+  .bill-details-section .tax {
+    @apply w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200;
+  }
+
+  .bill-details-section .sub-total span,
+  .bill-details-section .shipping span,
+  .bill-details-section .tax span {
+    @apply font-semibold text-gray-900;
+  }
+
+  .bill-details-section .total-amount {
+    @apply w-full flex justify-between text-xl font-semibold text-gray-900 py-2 border-b-2 border-gray-200;
+  }
+
+  .bill-details-section .address {
+    @apply mt-5 col-span-6 sm:col-span-3;
+  }
+
+  .bill-details-section .address label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .bill-details-section .address input {
+    @apply mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+  }
+
+  .bill-details-section .place-order__btn {
+    @apply w-full my-5 px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700;
+  }
+
+  /******* Bill details placeholder *******/
+
+  .bill-details-placeholder {
+    @apply border border-blue-300 shadow rounded-md p-4 my-2 w-full mx-auto lg:max-w-lg;
+  }
+
+  .bill-details-placeholder .wrapper {
+    @apply animate-pulse flex flex-col space-y-8 py-2 h-full;
+  }
+
+  .bill-details__placeholder .wrapper .text-wrapper {
+    @apply h-4 rounded w-full flex justify-between;
+  }
+
+  .bill-details__placeholder .wrapper .outline {
+    @apply h-4 rounded bg-blue-400;
+  }
+
+  .bill-details__placeholder .wrapper .address {
+    @apply rounded w-full my-4 space-y-4;
+  }
+
+  .bill-details__placeholder .wrapper .button {
+    @apply h-12 rounded bg-blue-400;
+  }
+
+  /******* Bill details placeholder *******/
+  .confirm-modal-section {
+    @apply fixed z-10 inset-0 overflow-y-auto;
+  }
+
+  .confirm-modal-section .wrapper {
+    @apply flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0;
+  }
+
+  .confirm-modal-section .wrapper .wrapper-transition {
+    @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity;
+  }
+
+  .confirm-modal-section .wrapper .hidden-element {
+    @apply hidden sm:inline-block sm:align-middle sm:h-screen;
+  }
+
+  .confirm-modal-section .wrapper main {
+    @apply inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full;
+  }
+
+  .confirm-modal-section .wrapper main .content {
+    @apply bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4;
+  }
+
+  .confirm-modal-section .wrapper main .content .content-container {
+    @apply sm:flex sm:items-start;
+  }
+
+  .confirm-modal-section .wrapper main .content .content-container .icon {
+    @apply mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10;
+  }
+
+  .confirm-modal-section .wrapper main .content .content-container .text {
+    @apply mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full;
+  }
+
+  .confirm-modal-section
+    .wrapper
+    main
+    .content
+    .content-container
+    .btn__container {
+    @apply bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse;
+  }
+
+  .confirm-modal-section
+    .wrapper
+    main
+    .content
+    .content-container
+    .btn__container
+    .btn {
+    @apply w-full inline-flex justify-center rounded-md border sm:ml-3 sm:w-auto sm:text-sm shadow-sm text-base font-medium px-4 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .confirm-modal-section
+    .wrapper
+    main
+    .content
+    .content-container
+    .btn__container
+    .confirm-btn {
+    @apply border-gray-300  bg-white  text-gray-700 hover:bg-gray-50  focus:ring-indigo-500;
+  }
+}
+
+@tailwind utilities;

@@ -2,8 +2,8 @@ import { useSelector } from "react-redux";
 import BillDetails from "./BillDetails";
 import BillDetailsPlaceholder from "./BillDetailsPlaceholder";
 import EmptyCart from "./EmptyCart";
-import CheckoutItem from "./CheckoutItem";
-import CheckoutItemPlaceholder from "./CheckoutItemPlaceholder";
+import CheckoutItem from "./Checkout-Item";
+import CheckoutItemPlaceholder from "./Checkout-Item/CheckoutItemPlaceholder";
 
 const index = () => {
   const products = useSelector((state) => state.products);
