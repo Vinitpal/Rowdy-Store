@@ -5,6 +5,7 @@ import productsReducer from "./products-reducer";
 import toggleCartReducer from "./toggleCart-reducer";
 import totalReducer from "./total-reducer";
 import ordersReducer from "./orders-reducer";
+import notificationReducer from "./notification-reducer";
 
 const rootReducer = combineReducers({
   products: productsReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   toggleCart: toggleCartReducer,
   total: totalReducer,
   orders: ordersReducer,
+  notification: notificationReducer,
 });
 
 export default rootReducer;

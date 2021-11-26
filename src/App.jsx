@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import "./App.css";
 
 // Routes
-import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
@@ -11,12 +10,16 @@ import Orders from "./components/Orders";
 import ProductListing from "./components/ProductListing";
 import ProductDetail from "./components/ProductDetails";
 import Footer from "./components/Footer";
+import Notification from "./components/Checkout/Bill-details/Notification";
+import NotFound from "./components/Not-found-404/NotFound";
 
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "./actions/index";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { getProducts, closeNotification } from "./actions/index";
 
 function App() {
   const dispatch = useDispatch();
+  const notification = useSelector((state) => state.notification);
 
   // to take the scroll to top
   const { pathname } = useLocation();
@@ -34,12 +37,30 @@ function App() {
       <Navbar />
       <Cart />
 
+      {/* notification handling */}
+      {notification.open ? (
+        <>
+          <Notification
+            message={notification.message}
+            type={notification.type}
+          />
+          <h1 className="hidden">
+            {setTimeout(() => {
+              dispatch(closeNotification());
+            }, 2000)}
+          </h1>
+        </>
+      ) : (
+        ""
+      )}
+
       <Routes>
-        <Route exact path="product/:id" element={<ProductDetail />} />
-        <Route exact path="/products" element={<ProductListing />} />
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/checkout" element={<Checkout />} />
-        <Route exact path="/orders" element={<Orders />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductListing />} />
+        <Route path="product/:id" element={<ProductDetail />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
 
       <Footer />

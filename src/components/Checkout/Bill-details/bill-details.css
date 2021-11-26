@@ -126,6 +126,16 @@
   .confirm-modal-section .wrapper main .btn__container .cancel-btn {
     @apply bg-blue-600 text-white hover:bg-blue-700  focus:ring-blue-500;
   }
+
+  /******  Notification component  ******/
+
+  .notification {
+    @apply rounded-md  p-4 absolute top-32 right-5;
+  }
+
+  .notification-btn {
+    @apply inline-flex rounded-md p-1.5  focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
 }
 
 @tailwind utilities;

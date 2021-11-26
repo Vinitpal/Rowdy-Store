@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .not-found-container {
+    @apply w-full flex flex-col lg:flex-row items-center justify-center px-2 my-2;
+    height: 80vh;
+  }
+
+  .not-found-container .wrapper {
+    @apply mb-12 w-full text-center lg:w-5/12;
+  }
+
+  .not-found-container .wrapper h1 {
+    @apply text-2xl lg:text-3xl font-semibold my-4;
+  }
+
+  .not-found-container .wrapper a {
+    @apply text-sm lg:text-lg hover:text-blue-500;
+  }
+}
+
+@tailwind utilities;
