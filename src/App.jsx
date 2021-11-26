@@ -3,6 +3,7 @@ import "./App.css";
 
 // Routes
 import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
@@ -35,7 +36,8 @@ function App() {
 
       <Routes>
         <Route exact path="product/:id" element={<ProductDetail />} />
-        <Route exact path="/" element={<ProductListing />} />
+        <Route exact path="/products" element={<ProductListing />} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/checkout" element={<Checkout />} />
         <Route exact path="/orders" element={<Orders />} />
       </Routes>

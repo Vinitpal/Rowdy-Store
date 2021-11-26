@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  /****** Home   ******/
+
+  .home {
+    @apply mb-10;
+  }
+
+  .home .hero-image {
+    background: url("/images/hero_image.webp") no-repeat center center/cover;
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+
+  .home .hero-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  .home .hero-image h1 {
+    @apply text-white text-center text-3xl lg:text-5xl sm:px-3 font-semibold;
+  }
+
+  .home .product-offer {
+    @apply flex overflow-auto px-8;
+  }
+
+  .home .recent-search {
+    @apply my-8 py-8 lg:px-12 rounded-md;
+  }
+
+  .home .recent-search h1,
+  .recommended h1,
+  .most-popular h1 {
+    @apply ml-4 mb-4 text-3xl lg:text-4xl font-bold;
+  }
+
+  .home .promo-card {
+    @apply mx-5 lg:mx-20 flex flex-wrap justify-evenly items-center;
+  }
+
+  .home .recommended {
+    @apply my-8 py-8 lg:px-12 rounded-md;
+  }
+
+  .home .most-popular {
+    @apply mt-8 py-8 lg:px-12 rounded-md;
+  }
+
+  /****** Second Section  ******/
+
+  .home .second-section__container {
+    @apply flex justify-evenly md:flex-row lg:flex-row flex-col items-center;
+  }
+
+  .second-section {
+    @apply mt-6 h-96 w-72 md:w-64 md:h-80 lg:w-72  shadow rounded-md relative  overflow-hidden cursor-pointer;
+  }
+
+  .second-section img {
+    @apply w-full h-full object-cover;
+  }
+
+  .second-section p {
+    @apply absolute top-0 left-0 p-2 text-center text-base w-full bg-gray-800 text-white;
+  }
+
+  .second-section button {
+    @apply absolute bottom-2 left-1/2 transform -translate-x-1/2 px-3 lg:px-4 py-1 md:py-4 lg:py-2 text-center bg-black text-white shadow rounded-md hover:bg-gray-900;
+  }
+
+  .second-section-card img {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .second-section-card:hover img {
+    transform: scale(1.08);
+    opacity: 0.8;
+  }
+
+  /****** Promo Card  ******/
+
+  .promo-card__container {
+    @apply my-8 lg:w-5/12 h-full flex-col rounded-lg relative;
+  }
+
+  .promo-card__container .wrapper {
+    @apply ml-8 py-4 w-48 lg:w-1/2 h-full flex flex-col text-sm lg:text-base justify-evenly items-start absolute top-0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .promo-card__container .wrapper .link {
+    @apply px-4 lg:px-10 text-center py-2 lg:py-4 bg-black text-white rounded-xl hover:bg-gray-900;
+  }
+
+  /****** Offer Stamp  ******/
+  .offer-stamp {
+    @apply w-full my-6 lg:my-10;
+  }
+
+  .offer-stamp__container {
+    @apply bg-gray-100 p-4 w-full flex flex-col items-center;
+  }
+
+  .offer-stamp__container .wrapper {
+    @apply flex tracking-wider items-center;
+  }
+
+  .offer-stamp__container .wrapper h1 {
+    @apply text-lg lg:text-4xl font-bold border-r-4 pr-4;
+  }
+
+  .offer-stamp__container .wrapper p {
+    @apply text-lg pl-4;
+  }
+
+  .offer-stamp__container .wrapper span {
+    @apply text-lg lg:text-4xl font-bold;
+  }
+
+  .offer-stamp__container .offer-desc {
+    @apply my-1 lg:my-2 lg:text-lg;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-image {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-container {
+    height: 100%;
+  }
+  .hero-image {
+    height: 70vh;
+  }
+}
+
+@tailwind utilities;
