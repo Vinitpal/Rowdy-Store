@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 // component
 import CartItem from "./CartItem";
-// import CartisEmpty from "../Checkout/CartisEmpty";
+import CartisEmpty from "../Checkout/CartisEmpty";
 
 const index = () => {
   const cart = useSelector((state) => state.cart);

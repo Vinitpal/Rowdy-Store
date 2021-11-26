@@ -5,7 +5,7 @@ import {
   getTimeStamp,
 } from "../utils";
 
-const ordersReducer = (state = getLocalStorage("orders", [])) => {
+const ordersReducer = (state = getLocalStorage("orders", []), action) => {
   switch (action.type) {
     case "PLACE_ORDER":
       const newState = [

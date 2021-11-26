@@ -6,6 +6,7 @@ import OrderComponent from "./OrderComponent";
 
 const index = () => {
   const orders = useSelector((state) => state.orders);
+  console.log(orders);
 
   return (
     <div className="order-section">
