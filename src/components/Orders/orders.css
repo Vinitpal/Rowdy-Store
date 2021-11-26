@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  /****** Order section ******/
+  .order-section {
+    @apply m-4 px-2 lg:px-6 lg:mx-16 py-6 border-2 rounded-sm;
+  }
+
+  .order-section__header h1 {
+    @apply text-3xl font-bold;
+  }
+
+  .order-section__header p {
+    @apply text-sm text-gray-500 py-2;
+  }
+
+  /****** Order component ******/
+  .order-component {
+    @apply mt-10;
+  }
+
+  .order-component__wrapper {
+    @apply lg:flex px-4 py-6 bg-gray-100 lg:items-start lg:justify-between rounded-md;
+  }
+
+  .order-component__wrapper .info-container {
+    @apply flex flex-col lg:flex-row;
+  }
+
+  .order-component__wrapper .info-container .info {
+    @apply p-4 border-b-2 flex flex-row lg:border-0 lg:flex-col justify-between;
+  }
+
+  .order-component__wrapper .info-container .info h1 {
+    @apply font-semibold;
+  }
+
+  .order-component__wrapper button {
+    @apply w-full lg:w-32 font-semibold py-2 lg:mx-2 hover:bg-gray-100 bg-white border-2 shadow-sm;
+  }
+
+  /****** Order product ******/
+  .ordered-product {
+    @apply flex justify-between items-start border-b-2 py-4 px-4 my-4 shadow-sm rounded-sm mt-2 bg-white;
+  }
+
+  .ordered-product .text {
+    @apply w-1/2;
+  }
+
+  .ordered-product .text .links-container .link {
+    @apply text-blue-700 font-semibold text-sm;
+  }
+
+  .ordered-product .text .links-container .view-product {
+    @apply pr-4 border-r-2 border-gray-400;
+  }
+
+  .ordered-product .image {
+    @apply w-1/4 lg:w-40 bg-gray-700;
+  }
+
+  .order-placeholder {
+    @apply mx-8 my-8;
+  }
+
+  .order-placeholder .shadow-wrapper {
+    @apply border border-blue-300 shadow rounded-md p-4 w-full;
+  }
+
+  .order-placeholder .wrapper {
+    @apply animate-pulse flex flex-col space-x-4;
+  }
+
+  .order-placeholder .blue-rounded {
+    @apply bg-blue-400 rounded;
+  }
+
+  .order-placeholder .wrapper .item-1 {
+    @apply flex-1 space-y-4 py-1 px-4;
+  }
+
+  .order-placeholder .wrapper .item-2 {
+    @apply flex-1 space-y-4 lg:space-y-0 py-1 lg:flex lg:items-center lg:justify-between mt-5;
+  }
+
+  .order-placeholder .wrapper .item-2 .item-2__text {
+    @apply flex justify-between w-full space-y-4 lg:space-y-0 lg:w-2/4 flex-col lg:flex-row;
+  }
+
+  .order-placeholder .wrapper .item-2__btn {
+    @apply w-full lg:w-1/4 space-y-4 lg:space-y-0 flex justify-evenly flex-col lg:flex-row;
+  }
+
+  .order-placeholder .wrapper .item-3 {
+    @apply flex-1 flex flex-col lg:flex-row lg:justify-between items-center mt-6 py-1;
+  }
+
+  .order-placeholder .wrapper .item-3 .btn {
+    @apply rounded-md my-2 bg-blue-400 h-28 w-full lg:w-1/4;
+  }
+}
+
+@tailwind utilities;
