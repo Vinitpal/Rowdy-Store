@@ -1,6 +1,11 @@
-import { Fragment, useRef } from "react";
+import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { ExclamationIcon } from "@heroicons/react/outline";
+// import { loadStripe } from "@stripe/stripe-js";
+// const stripePromise = loadStripe(
+//   "pk_test_51LpR3WSCutbhZqg1SUfMkaMNschB0KFzGehKxCNEgv6PVe4wdpmfRXHMtGggo1GjiWSN6LBq7gzMUhnVI7ODxGpA00J7kPgQ7t"
+// );
+// import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 
 // Redux
 import { useDispatch } from "react-redux";
@@ -16,7 +21,46 @@ const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
   const cancelButtonRef = useRef(null);
   const dispatch = useDispatch();
 
-  const handleConfirm = () => {
+  // const [isPaymentLoading, setPaymentLoading] = useState(false);
+
+  // const stripe = useStripe();
+  // const elements = useElements();
+
+  const handleConfirm = async () => {
+    //!todo: add payment gateway
+
+    // if (!stripe || !elements) {
+    //   return;
+    // }
+
+    // setPaymentLoading(true);
+    // stripe.api_key =
+    //  SECRET_KEY
+
+    // const PaymentIntentVar = stripe.PaymentIntent.create(
+    //   (amount = 2000),
+    //   (currency = "rs"),
+    //   (payment_method_types = ["card"])
+    // );
+
+    // const paymentResult = await stripe.confirmCardPayment(PaymentIntentVar, {
+    //   payment_method: {
+    //     card: elements.getElement(CardElement),
+    //     billing_details: {
+    //       name: "Vinitpal Singh Arora",
+    //     },
+    //   },
+    // });
+    // setPaymentLoading(false);
+    // if (paymentResult.error) {
+    //   dispatch(
+    //     getNotification({
+    //       message: paymentResult.error.message,
+    //       type: "alert",
+    //     })
+    //   );
+    // } else {
+    //   if (paymentResult.paymentIntent.status === "succeeded") {
     dispatch(placeOrder({ cart, address, total }));
     dispatch(resetTotal(0));
     dispatch(clearCart());
@@ -27,6 +71,8 @@ const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
       })
     );
     setOpen(false);
+    // }
+    // }
   };
 
   return (

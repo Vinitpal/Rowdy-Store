@@ -7,6 +7,8 @@ import { getNotification } from "../../../actions";
 
 // components
 import ConfirmModal from "./ConfirmModal";
+// import { Elements, CardElement } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
 
 const index = ({ cart }) => {
   const [address, setAddress] = useState("");
@@ -14,13 +16,16 @@ const index = ({ cart }) => {
   const subtotal = useSelector((state) => state.total);
 
   const dispatch = useDispatch();
+  // const stripePromise = loadStripe(
+  //   "pk_test_51LpR3WSCutbhZqg1SUfMkaMNschB0KFzGehKxCNEgv6PVe4wdpmfRXHMtGggo1GjiWSN6LBq7gzMUhnVI7ODxGpA00J7kPgQ7t"
+  // );
 
   const shipping = 2.0;
   const tax = subtotal * 0.06;
   const total = Number(subtotal + shipping + tax);
 
   const handleOpen = () => {
-    if (address.length > 10) {
+    if (address.length > 3) {
       setOpen(!open);
     } else {
       dispatch(
@@ -67,7 +72,10 @@ const index = ({ cart }) => {
           Place Order
         </button>
       </div>
-
+      {/*      
+        <Elements stripe={stripePromise}>
+        </Elements>
+        */}
       <ConfirmModal
         cart={cart}
         open={open}
