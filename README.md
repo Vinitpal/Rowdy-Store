@@ -5,12 +5,12 @@ An E-commerce website made with React which covers all the concepts of Frontend 
 
 ## Screenshots
 
-![App Screenshot](https://cdn.discordapp.com/attachments/801365129534242826/913762876366405632/rowdy-store-homepage.png)
+![App Screenshot](https://res.cloudinary.com/dmwxnrn8o/image/upload/v1727615875/rowdy-store-homepage_ftqo3u.png)
 
 
 ## Demo
 
-https://rowdy-store-vinit.netlify.app/
+https://rowdy-store-ten.vercel.app/
 
 
 ## Features
