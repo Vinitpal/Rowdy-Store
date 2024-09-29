@@ -59,7 +59,7 @@ const index = () => {
         <Link to="/" className=" logo">
           <img
             className=""
-            src="https://cdn.discordapp.com/attachments/877090379307028480/879236481489715220/LogoMakr-9ARqEe.png"
+            src="https://res.cloudinary.com/dmwxnrn8o/image/upload/v1727609034/dragon_logo-removebg_zptz5p.png"
             alt="logo"
           />
           <span className="">Rowdy Store</span>

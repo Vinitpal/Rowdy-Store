@@ -16,6 +16,7 @@ import NotFound from "./components/Not-found-404/NotFound";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { getProducts, closeNotification } from "./actions/index";
+import nprogress from "nprogress";
 
 function App() {
   const dispatch = useDispatch();
@@ -23,8 +24,10 @@ function App() {
 
   // to take the scroll to top
   const { pathname } = useLocation();
-
+  
   useEffect(() => {
+    nprogress.start();
+    nprogress.done();
     window.scrollTo(0, 0);
   }, [pathname]);
 

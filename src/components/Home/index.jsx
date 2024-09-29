@@ -69,7 +69,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="promo-card">
+      {/* todo: image need to be updated */}
+      {/* <div className="promo-card">
         <PromoCard
           image="https://cdn.discordapp.com/attachments/877090379307028480/879238118639796224/1.png"
           heading="Top Selling Products"
@@ -80,7 +81,7 @@ const Home = () => {
           heading="Season Sale"
           headColor="text-gray-400"
         />
-      </div>
+      </div> */}
 
       <div className=" recommended">
         <h1 className="">Recommended</h1>

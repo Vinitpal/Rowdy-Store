@@ -6,7 +6,7 @@ const UserReview = () => {
       <div className="mt-8">
         <div className="user__info">
           <img
-            src="https://cdn.discordapp.com/attachments/753151975570276352/866536124222537778/unknown.png"
+            src="https://res.cloudinary.com/dmwxnrn8o/image/upload/v1727608957/avatar_wiqbcy.png"
             alt="user"
           />
           <div className="mx-2">
